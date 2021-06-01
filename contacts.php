@@ -34,6 +34,8 @@
     <title>AxDesign</title>
 </head>
 <a id="button"></a>
+<?php include('bd.php') 
+?>
 <body >
 <!---Header-->
 <header class="header"  >

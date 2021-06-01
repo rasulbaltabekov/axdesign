@@ -50,7 +50,8 @@
 </head>
 <a id="button"></a>
 <body>
-
+<?php include('bd.php') 
+?>
 <!---Header-->
 <?php
 
@@ -110,7 +111,7 @@
 		
 
 		<?php 
-		  $mysqli = new mysqli("localhost", "root", "", "test");
+
 		  mysqli_set_charset($mysqli, "SET NAMES 'utf8'");
 		  $result_set = $mysqli->query("SELECT * FROM `users` WHERE `user_login`='".$_SESSION['user_login']."'");
 		  //  $result_set = $mysqli->query("SELECT * FROM `comments` WHERE `rage_id`='$page_id'");

@@ -33,6 +33,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AxDesign</title>
 </head>
+<?php include('bd.php') 
+?>
 <body >
 <!---Header-->
 <?php

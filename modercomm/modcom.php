@@ -1,7 +1,9 @@
+<?php include('bd.php') 
+?>
 <?php   
 $mod = "0";
 
-$mysqli = new mysqli("localhost", "root", "", "test");
+
 mysqli_set_charset($mysqli, "SET NAMES 'utf8'");
  
 

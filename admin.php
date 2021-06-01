@@ -21,6 +21,8 @@
     <title>ADMIN</title>
 </head>
 <body>
+<?php include('bd.php') 
+?>
 <?php include('server.php') ?>
 <?php
 
@@ -238,7 +240,7 @@ header("location: login.php");
 </form></div>
 
 <?php
-  $mysqli = new mysqli("localhost", "root", "", "test");
+
   mysqli_set_charset($mysqli, "SET NAMES 'utf8'");
   $result_set = $mysqli->query("SELECT * FROM `carousel`"); 
 ?>

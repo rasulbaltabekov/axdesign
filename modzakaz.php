@@ -21,6 +21,8 @@
     <title>ADMIN</title>
 </head>
 <body>
+<?php include('bd.php') 
+?>
 <?php include('server.php') ?>
 <?php
 
@@ -112,7 +114,7 @@ header("location: login.php");
 
 
 <?php
-$mysqli = new mysqli("localhost", "root", "", "test");
+
 mysqli_set_charset($mysqli, "SET NAMES 'utf8'");
 		  $result_set = $mysqli->query("SELECT * FROM `zakaz` WHERE `userlog`='".$_SESSION['user_login']."'");
 		  //  $result_set = $mysqli->query("SELECT * FROM `comments` WHERE `rage_id`='$page_id'");

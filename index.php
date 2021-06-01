@@ -32,6 +32,8 @@ body { overflow-x: hidden; }
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AxDesign</title>
 </head>
+<?php include('bd.php') 
+?>
 <?php
 
 session_start();
@@ -90,7 +92,7 @@ if (isset($_GET['logout'])) {
        <div class="container" data-aos="fade-right">
            <div class="intro__inner">
            <?php 
-		  $mysqli = new mysqli("localhost", "root", "", "test");
+
 		  mysqli_set_charset($mysqli, "SET NAMES 'utf8'");
 		  $result_set = $mysqli->query("SELECT * FROM `users` WHERE `user_login`='".$_SESSION['user_login']."'");
 		  while ($row = $result_set->fetch_assoc()) {
@@ -139,7 +141,7 @@ if (isset($_GET['logout'])) {
 <?php endif; ?>
 
 <?php
-  $mysqli = new mysqli("localhost", "root", "", "test");
+
   mysqli_set_charset($mysqli, "SET NAMES 'utf8'");
   $result_set = $mysqli->query("SELECT * FROM `lending` LIMIT 3");
 ?>   
@@ -160,7 +162,7 @@ if (isset($_GET['logout'])) {
     ?>
 </div>
 <?php
-  $mysqli = new mysqli("localhost", "root", "", "test");
+
   mysqli_set_charset($mysqli, "SET NAMES 'utf8'");
   $result_set = $mysqli->query("SELECT * FROM `design` LIMIT 3");
 ?>   
@@ -214,7 +216,7 @@ if (isset($_GET['logout'])) {
 </div>
   </div>
   <?php
-  $mysqli = new mysqli("localhost", "root", "", "test");
+
   mysqli_set_charset($mysqli, "SET NAMES 'utf8'");
   $result_set = $mysqli->query("SELECT * FROM `carousel` ");
 ?>   

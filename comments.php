@@ -31,6 +31,8 @@
 </head>
 <a id="button"></a>
 <body>
+<?php include('bd.php') 
+?>
 <!---Header-->
 <?php
 session_start(); 

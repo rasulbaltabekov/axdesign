@@ -46,6 +46,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AxDesign</title>
 </head>
+<?php include('bd.php') 
+?>
 <a id="button"></a>
 <body>
 <header class="header"  >
@@ -94,7 +96,7 @@
     <!-- logged in user information -->
     <?php  if (isset($_SESSION['user_login'])) : ?>
 		<?php 
-		  $mysqli = new mysqli("localhost", "root", "", "test");
+
 		  mysqli_set_charset($mysqli, "SET NAMES 'utf8'");
 		  $result_set = $mysqli->query("SELECT * FROM `users` WHERE `user_login`='".$_SESSION['user_login']."'");
 		  //  $result_set = $mysqli->query("SELECT * FROM `comments` WHERE `rage_id`='$page_id'");

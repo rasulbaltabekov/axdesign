@@ -30,7 +30,8 @@
 
 <body>
 <!---Header-->
-
+<?php include('bd.php') 
+?>
 <header class="header"  >
   <div class="container">
       <div class="header__inner">
@@ -82,7 +83,7 @@
 </head>
 <body>
 <?php
-  $mysqli = new mysqli("localhost", "root", "", "test");
+ 
   mysqli_set_charset($mysqli, "SET NAMES 'utf8'");
   $result_set = $mysqli->query("SELECT * FROM `carousel` ");
 ?>   

@@ -1,8 +1,11 @@
+
+<?php include('bd.php') 
+?>
 <?php
 
 
+
   $page_id = 150;
-  $mysqli = new mysqli("localhost", "root", "", "test");
   mysqli_set_charset($mysqli, "SET NAMES 'utf8'");
   $result_set = $mysqli->query("SELECT * FROM `comments` ORDER BY `date` DESC LIMIT 1000");
   //  $result_set = $mysqli->query("SELECT * FROM `comments` WHERE `rage_id`='$page_id'");
