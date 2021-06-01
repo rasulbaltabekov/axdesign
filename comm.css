@@ -1,0 +1,180 @@
+.comm {
+  width: 65%;
+  box-shadow: 0 14px 28px rgba(163, 163, 163, 0.25), 0 10px 10px rgba(14, 14, 14, 0.22);
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px; /* скругление углов блока */
+  padding: 16px; /* внутренние поля */
+  margin: 16px auto; /* внешние отступы */
+  font-size: 17px;
+  outline:none;
+
+  }
+
+
+.comm input {
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1147px;
+    width: 150px;
+
+    border: 1px solid rgb(189, 189, 189);
+    padding: 5px 0;
+   
+    margin-top: 10px;
+    outline:none;
+
+
+ 
+    font-weight: bold;
+    
+}
+
+.comm textarea {
+  max-width: 100%;
+  width: 100%;
+
+  height: 100px;
+  outline:none;
+  font-weight: bold;
+  border: 1px solid rgb(189, 189, 189);
+}
+
+.comm textarea:hover {
+  outline:none;
+  border: 1px solid rgb(189, 189, 189);
+  font-weight: bold;
+}
+
+.commentary {
+  
+   display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.containerr {   width: 65%;
+  box-shadow: 0 14px 28px rgba(163, 163, 163, 0.25), 0 10px 10px rgba(14, 14, 14, 0.22);
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px; /* скругление углов блока */
+    padding: 16px; /* внутренние поля */
+    margin: 16px auto; /* внешние отступы */
+    font-size: 17px;
+    
+    
+    }
+    
+
+
+  
+  .containerr span {
+    
+    font-size: 18px;
+    margin-right: 15px;
+    color: rgb(0, 0, 0);
+    
+  }
+
+
+
+.razor {
+    max-width:100%;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+  }
+
+
+
+
+
+
+  @media only screen and (max-width: 1400px) {
+  }
+   
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+
+  
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1000px) {
+    
+   
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  
+  .containerr {   width: 85%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px; /* скругление углов блока */
+    padding: 16px; /* внутренние поля */
+    margin: 16px auto; /* внешние отступы */
+    font-size: 15px;
+    font-weight: 700;
+    
+  }
+
+  .containerr span {
+    font-size: 15px;
+    margin-right: 15px;
+    color: black;
+    font-weight: 700;
+  }
+
+  .razor {
+    max-width: 90%;
+    width: 85%;
+    color: black;
+    font-weight: 700;
+  }
+
+
+  .comm {
+    width: 85%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px; /* скругление углов блока */
+    padding: 16px; /* внутренние поля */
+    margin: 16px auto; /* внешние отступы */
+    font-size: 17px;
+  }
+  
+  .comm input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 1147px;
+      width: 249px;
+  
+      padding: 5px 0;
+  
+  }
+  
+  .comm textarea {
+    max-width: 100%;
+    width: 100%;
+  
+    height: 100px;
+   
+  
+  }
+    }
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+    
+   
+}
+
+
