@@ -1,7 +1,7 @@
 
-<?php include('bd.php') 
-?>
-<?php   
+
+<?php 
+include('bd.php') ;  
 $name = $_POST["url"];
   $page_id = $_POST["nazv"];
   $id= $_POST["id"];

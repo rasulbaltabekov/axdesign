@@ -1,19 +1,8 @@
 
-<?php include('bd.php') 
-?>
+
 <?php
 session_start(); 
-
-
-
-
-$recepient = "error4044notfound@gmail.com"; //Почта куда будут приходить письма
-$subject = "Заявка с сайта Форма обратной связи ajax"; //Сообщение
-$headers= "MIME-Version: 1.0\r\n";
-$headers .= "Content-type: text/html; charset=utf-8\r\n"; 
-$headers .= "From: test.ru <test.ru>\r\n"; 
-
-
+include('bd.php') ;
 
 
 
@@ -48,8 +37,7 @@ if (is_numeric($_POST['answ'])) //проверяем число ли, если �
 {
   if ((intval($_POST['answ']))===(intval($_SESSION['ans']))) //проверяем эквивалентностью опять же из-за возможного нуля в ответе
   {
-    $message = "Имя: $name <br/> Email: $email <br/> Цена: $question <br/> Сообщение: $ququ <br/> Стилистика: $vybor";
-mail($recepient, $subject, $message, $headers);
+  
     $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
     header("Location: form.php"); //возвращаемся на страницу формы "GET" методом
     $_SESSION["successMessage"] = "Спасибо за обращение, в ближайшее время с вами свяжутся!";
