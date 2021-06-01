@@ -1,3 +1,6 @@
+
+<?php include('bd.php') 
+?>
 <?php
    session_start(); 
 
@@ -21,7 +24,7 @@
   $name = htmlspecialchars($name);// Преобразуем спецсимволы в HTML-сущности
   $text_comment = htmlspecialchars($text_comment);// Преобразуем спецсимволы в HTML-сущности
   $city = htmlspecialchars($city);
-  $mysqli = new mysqli("localhost", "root", "", "test");// Подключается к базе данных
+
   $mysqli->query("INSERT INTO `comments` (`name`, `rage_id`, `text_comments`, `city`, `date`, `moder`) VALUES ('$name', '$page_id', '$text_comment', '$city', '$date', '$mod')");// Добавляем комментарий в таблицу
 
   }

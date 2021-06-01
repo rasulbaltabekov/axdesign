@@ -1,3 +1,6 @@
+
+<?php include('bd.php') 
+?>
 <?php
 session_start(); 
 
@@ -34,7 +37,8 @@ $arr = array(
   
 
 );
-$mysqli = new mysqli("localhost", "root", "", "test");
+
+
 $mysqli->query("INSERT INTO `zakaz` (`name`, `email`, `cena`, `comm`, `vybor`, `userlog`) VALUES ('$name', '$email', '$question', '$ququ', '$vybor', '".$_SESSION['user_login']."')");// Добавляем комментарий в таблицу
 foreach($arr as $key => $value) {
   $txt.= "<b>".$key."</b> ".$value."%0A";

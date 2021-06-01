@@ -11,5 +11,5 @@ $name = $_POST["url"];
 
   $mysqli-> query("UPDATE `lending` SET `url`='".$_POST['url']."', `name`='".$_POST['nazv']."', `time`='".$_POST['time']."' WHERE `id`= '" . $_POST['id'] . "'");
   // $mysqli->query ("UPDATE `lending` SET (`url`, `name`, `time`) VALUES ('$name', '$page_id', '$text_comment') WHERE id='.$_POST["id"].' ");
-  header("Location: ".$_SERVER["HTTP_REFERER"]);
+  header("location: admin.php");
   ?>

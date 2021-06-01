@@ -96,7 +96,7 @@ header("location: login.php");
        </div>
    </header>
    <td><a href="commadmin.php">Модерация отзывов</a></td>
-   <td><a href="commadmin.php">Модерация Заказов</a></td>
+   <td><a href="modzakaz.php">Модерация Заказов</a></td>
    <h1 class="admins">АДМИН ПАНЕЛЬ ГЛАВНОЙ СТРАНИЦЫ</h1>
 <div class="content row">
     <div class="column"><div class="adm">

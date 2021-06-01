@@ -11,4 +11,4 @@ $name = $_POST["url"];
   $city = htmlspecialchars($city);
 
   $mysqli->query("INSERT INTO `lending` (`url`, `name`, `time`, `id`) VALUES ('$name', '$page_id', '$text_comment', '$id')");// Добавляем комментарий в таблицу
-  header("Location: ".$_SERVER["HTTP_REFERER"]);// Делаем реридект обратно ?>
+  header("location: admin.php");// Делаем реридект обратно ?>

@@ -10,7 +10,7 @@ $name = $_POST["url"];
  
   $mysqli-> query("DELETE FROM `comments` WHERE `id`= '" . $_GET['index'] . "'");
   // $mysqli->query ("UPDATE `lending` SET (`url`, `name`, `time`) VALUES ('$name', '$page_id', '$text_comment') WHERE id='.$_POST["id"].' ");
-  header("Location: ".$_SERVER["HTTP_REFERER"]);// Делаем реридект обратно 
+  header("location: commadmin.php");// Делаем реридект обратно 
   
 
   
