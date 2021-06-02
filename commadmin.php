@@ -137,7 +137,7 @@ $result_set = $mysqli->query("SELECT * FROM `comments` ORDER BY `moder`='1' DESC
 else {
 ?>
 
-<td><a href="modercomm\modcom.php?index=<?php echo $row['id']?>">Опубликовать</a></td>
+<td><a href="\modercomm\modcom.php?index=<?php echo $row['id']?>">Опубликовать</a></td>
 
 
 </div>
