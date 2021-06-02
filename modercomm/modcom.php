@@ -1,4 +1,4 @@
-<?php include('bd.php') 
+<?php include('../bd.php')
 ?>
 <?php   
 $mod = "0";

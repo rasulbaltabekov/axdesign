@@ -1,8 +1,9 @@
 
-
+<?php include('bd.php')
+?>
 <?php
 session_start(); 
-include('bd.php') ;
+
 
 
 
