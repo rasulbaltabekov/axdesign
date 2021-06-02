@@ -8,6 +8,6 @@
   $mysqli-> query("DELETE FROM `comments` ORDER BY `id` DESC
   LIMIT 1");
   // $mysqli->query ("UPDATE `lending` SET (`url`, `name`, `time`) VALUES ('$name', '$page_id', '$text_comment') WHERE id='.$_POST["id"].' ");
-  header("location: commadmin.php");// Делаем реридект обратно ?>
+  header("location: ../commadmin.php");// Делаем реридект обратно ?>
 
 

@@ -6,4 +6,4 @@ $name = $_POST["url"];
   $name = htmlspecialchars($name);// Преобразуем спецсимволы в HTML-сущности
 
   $mysqli->query("INSERT INTO `carousel` (`url`, `id`) VALUES ('$name', '$id')");// Добавляем комментарий в таблицу
-  header("location: admin.php");// Делаем реридект обратно ?>
+  header("location: ../admin.php");// Делаем реридект обратно ?>

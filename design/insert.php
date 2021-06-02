@@ -10,4 +10,4 @@ $name = $_POST["url"];
   $city = htmlspecialchars($city);
  
   $mysqli->query("INSERT INTO `design` (`url`, `name`, `time`, `id`) VALUES ('$name', '$page_id', '$text_comment', '$id')");// Добавляем комментарий в таблицу
-  header("location: admin.php");// Делаем реридект обратно ?>
+  header("location: ../admin.php");// Делаем реридект обратно ?>

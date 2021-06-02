@@ -8,6 +8,6 @@ $name = $_POST["url"];
   $mysqli = new mysqli("localhost", "rasul", "password", "axdesign");
   $mysqli-> query("DELETE FROM `lending` WHERE `id`= '" . $_POST['id'] . "'");
   // $mysqli->query ("UPDATE `lending` SET (`url`, `name`, `time`) VALUES ('$name', '$page_id', '$text_comment') WHERE id='.$_POST["id"].' ");
-  header("location: admin.php");// Делаем реридект обратно ?>
+  header("location: ../admin.php");// Делаем реридект обратно ?>
 
 
